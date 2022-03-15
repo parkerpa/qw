@@ -5,371 +5,1363 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 科技网络, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 2, server: 169.197.142.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 3, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 科技网络 4, server: 0306hk01.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 0306hk01.fans8.xyz}, udp: true}
-  - {name: 科技网络 5, server: 145.239.7.164, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 6, server: 134.195.196.68, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 7, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 科技网络 8, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 9, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 科技网络 10, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 科技网络 11, server: 134.195.196.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 12, server: 172.99.190.92, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 13, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 14, server: 134.195.196.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 科技网络 15, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 16, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
-  - {name: 科技网络 17, server: 134.195.196.68, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 18, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 19, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 科技网络 20, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 21, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 科技网络 22, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 23, server: 169.197.142.187, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 科技网络 24, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 科技网络 25, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 26, server: 169.197.142.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 科技网络 27, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 28, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 科技网络 29, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 30, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: 科技网络 31, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 32, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 33, server: 39.earths.team, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 科技网络 34, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 35, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: 科技网络 36, server: 39.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 39.earths.team, skip-cert-verify: true, udp: true}
-  - {name: 科技网络 37, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 38, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 科技网络 39, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 科技网络 40, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 41, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 42, server: 134.195.196.68, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 43, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 44, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 45, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 科技网络 46, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 47, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: 科技网络 48, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 科技网络 49, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 50, server: 51.255.66.185, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 51, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 科技网络 52, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 53, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 科技网络 54, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 55, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 56, server: 134.195.196.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 57, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 58, server: 134.195.196.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 59, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 60, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 61, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 62, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 63, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 64, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 65, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 66, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 科技网络 67, server: 134.195.196.68, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 科技网络 68, server: 134.195.196.187, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 科技网络 69, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 70, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 71, server: 169.197.142.187, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 72, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 73, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 科技网络 74, server: 134.195.196.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 科技网络 75, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 76, server: 145.239.7.164, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 科技网络 77, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 科技网络 78, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 科技网络 79, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: 科技网络 80, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 科技网络 81, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 科技网络 82, server: 134.195.196.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 科技网络 83, server: 145.239.7.164, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 科技网络 84, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 科技网络 85, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 科技网络 86, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 科技网络 87, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: JK1-V4-湖新LINODE02|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39569, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode10.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-广新LINODE02|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39553, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode02.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广新LINODE02|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39557, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode04.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广新LINODE01|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 38555, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode03.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-沪日02|v2ray, server: shlt.jiserver.xyz, port: 39409, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp05.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-沪新新机房01v2ray, server: jike1-gzyd.jiserver.xyz, port: 39595, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg03.jiserver.xyz}, udp: true}
+  - {name: JK1-V2-CN2新LINODE02|v2ray|2x流量, server: jike1-gzyd.jiserver.xyz, port: 39561, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode06.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-湖新LINODE02|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39573, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode12.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广美01|v2ray|4x流量, server: jike1-gzyd.jiserver.xyz, port: 39601, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-us02.jiserver.xyz}, udp: true}
+  - {name: US_欢迎使用软件库APP, server: 129.153.198.41, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: US_欢迎使用软件库APP 2, server: 129.146.103.173, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: CN_欢迎使用软件库APP, server: 120.233.147.118, port: 56390, type: vmess, uuid: 2a8fc48e-d919-4572-9869-ef75d127a4bb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
+  - {name: US_欢迎使用软件库APP 3, server: 158.101.19.245, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: JK1-V4-沪德GIA01|v2ray, server: shlt.jiserver.xyz, port: 29891, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-de01.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-台湾02|v2ray, server: jike-gzyd.jiserver.xyz, port: 39211, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-newhinet01.jiserver.xyz}, udp: true}
+  - {name: JK1-V2-CN2新新机房01|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39509, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg05.jiserver.xyz}, udp: true}
+  - {name: JK1-V2-CN2德GIA01|v2ray|2x流量, server: jike1-cccn2.jiserver.xyz, port: 27805, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-de03.jiserver.xyz}, udp: true}
+  - {name: V5-英国, server: uk01-vm5.entry.ikuuu.casa, port: 467, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-07-01.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V4-广日01|v2ray, server: shlt.jiserver.xyz, port: 39401, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp01.jiserver.xyz}, udp: true}
+  - {name: 免费-日本5, server: jp05-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp05-tls-vm0.entry.vm-pass.org}, udp: true}
+  - {name: JK1-V2-CN2日01|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39405, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp03.jiserver.xyz}, udp: true}
+  - {name: JK1-V1-IPLC美01|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39605, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-us05.jiserver.xyz}, udp: true}
+  - {name: JK1-V1-IPLC德GIA01|v2ray|4x流量, server: jike1-jxcn2.jiserver.xyz, port: 29807, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-de04.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广日01|v2ray, server: jike-cccn2.jiserver.xyz, port: 39403, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp02.jiserver.xyz}, udp: true}
+  - {name: JK1-V2-CN2台01|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39205, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-hinet03.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-沪日02|v2ray, server: jike-cccn2.jiserver.xyz, port: 39411, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp06.jiserver.xyz}, udp: true}
+  - {name: Tokyo-Azure-Mumbai-Linode, server: jpaz3.xmrth-node.xyz, port: 10135, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V2-CN2日02|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39413, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp07.jiserver.xyz}, udp: true}
+  - {name: V5-美国, server: us01-vm5.entry.ikuuu.casa, port: 469, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-09-01.entry-0.chinasnow.net}, udp: true}
+  - {name: Tokyo-Azure-Tokyo-AWS, server: jpaz3.xmrth-node.xyz, port: 10051, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: HK_欢迎使用软件库APP, server: 52.184.99.90, port: 8010, type: vmess, uuid: 3b149bd9-83a1-4779-9d2c-a6b72bfd5e75, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.184.99.90}, udp: true}
+  - {name: Tokyo-Azure-LAX-DediPath, server: jpaz3.xmrth-node.xyz, port: 10140, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V4-广新新机房01|v2ray, server: shlt.jiserver.xyz, port: 39503, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg02.jiserver.xyz}, udp: true}
+  - {name: V5-新加坡, server: sg01-vm5.entry.ikuuu.casa, port: 466, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-10-01.entry-0.chinasnow.net}, udp: true}
+  - {name: 香港Azure-Mumbai-Linode, server: hkaz3.xmrth-node.xyz, port: 10035, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V4-沪新新机房01|v2ray, server: shlt.jiserver.xyz, port: 39501, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg01.jiserver.xyz}, udp: true}
+  - {name: V5-日本10, server: jp10-vm5.entry.ikuuu.casa, port: 463, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-10.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V4-沪新GIA01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29851, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg01.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广新GIA01|v2ray|1.5x流量, server: jike-gzyd.jiserver.xyz, port: 29853, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg02.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-台湾01|v2ray, server: jike-gzyd.jiserver.xyz, port: 39201, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-hinet01.jiserver.xyz}, udp: true}
+  - {name: CN_欢迎使用软件库APP 2, server: zfd-cn1.ddnsnode.com, port: 16119, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_欢迎使用软件库APP 3, server: zfd-cn1.ddnsnode.com, port: 16119, type: vmess, uuid: f8a35790-1599-38a5-bed9-224befd26d38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V5-京日3, server: jp03-vm5.entry.ikuuu.casa, port: 449, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-03.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V3-广台02|v2ray|1.5x流量, server: jike-gzyd.jiserver.xyz, port: 39213, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-newhinet02.jiserver.xyz}, udp: true}
+  - {name: JK1-V2-CN2新LINODE01|v2ray|2x流量, server: jike1-gzyd.jiserver.xyz, port: 38559, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode05.jiserver.xyz}, udp: true}
+  - {name: 日本-NF-Disney, server: n.cloudoo.xyz, port: 4001, type: vmess, uuid: e17c63c9-d21d-4a84-a7a6-28f7c00eecec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: 香港Azure-Mumbai-Linode 2, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V3-广德GIA01|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 29893, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-de02.jiserver.xyz}, udp: true}
+  - {name: 香港Azure-Seoul-AWS, server: hkaz3.xmrth-node.xyz, port: 10019, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V2-CN2台02|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39215, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-newhinet03.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广港BGP02|v2ray, server: jike-gzyd.jiserver.xyz, port: 29709, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azhk23.jiserver.xyz}, udp: true}
+  - {name: 香港Azure-Seoul-AWS 2, server: hkaz1.xmrth-node.xyz, port: 10017, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: JK1-V1-CN2台奈飞专用02, server: jike1-cccn2.jiserver.xyz, port: 31863, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: xixi-newhinet02.jiserver.xyz}, udp: true}
+  - {name: V5-京台1 动画疯, server: tw01-vm5.entry.ikuuu.casa, port: 444, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tls/b60000_0001.ts, ws-headers: {Host: bgp-03-01.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V3-广港BGP01|v2ray, server: jike-gzyd.jiserver.xyz, port: 29711, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azhk24.jiserver.xyz}, udp: true}
+  - {name: 新加坡, server: n.cloudoo.xyz, port: 4002, type: vmess, uuid: e17c63c9-d21d-4a84-a7a6-28f7c00eecec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: n.cloudoo.xyz}, udp: true}
+  - {name: JK1-V2-CN2新新机房02|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 38511, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg06.jiserver.xyz}, udp: true}
+  - {name: V5-俄罗斯, server: ru01-vm5.entry.ikuuu.casa, port: 455, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-05-01.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V2-CN2新GIA01|v2ray|2x流量, server: jike1-cccn2.jiserver.xyz, port: 29855, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg03.jiserver.xyz}, udp: true}
+  - {name: V5-京日1, server: jp01-vm5.entry.ikuuu.casa, port: 448, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-01.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC台02|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39217, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-newhinet04.jiserver.xyz}, udp: true}
+  - {name: V5-京日2, server: jp02-vm5.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-02.entry-0.chinasnow.net}, udp: true}
+  - {name: CN_欢迎使用软件库APP 4, server: 120.233.147.118, port: 58938, type: vmess, uuid: 5158d1fe-c744-4679-842c-67318fb18d87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
+  - {name: JK1-V1-IPLC台奈飞专用03|4x流量, server: jike1-jxcn2.jiserver.xyz, port: 31865, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: xixi-newhinet03.jiserver.xyz}, udp: true}
+  - {name: JK1-V1-IPLC日02|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39415, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp08.jiserver.xyz}, udp: true}
+  - {name: V5-日本9, server: jp09-vm5.entry.ikuuu.casa, port: 462, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-09.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC台01|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39207, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-hinet04.jiserver.xyz}, udp: true}
+  - {name: V5-日本4, server: jp04-vm5.entry.ikuuu.casa, port: 12553, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-04.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC日01|v2ray|4x流量, server: jike-jxcn2.jiserver.xyz, port: 39407, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azjp04.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-广台01|v2ray|1.5x流量, server: jike-gzyd.jiserver.xyz, port: 39203, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-hinet02.jiserver.xyz}, udp: true}
+  - {name: JK1-V1-IPLC新新机房02|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39515, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg08.jiserver.xyz}, udp: true}
+  - {name: 欢迎使用软件库APP, server: 104.16.42.170, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: JK1-V1-IPLC新GIA01|v2ray|4x流量, server: jike1-jxcn2.jiserver.xyz, port: 29857, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-giasg04.jiserver.xyz}, udp: true}
+  - {name: V5-香港11, server: hk11-vm5.entry.ikuuu.casa, port: 459, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-11.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC新LINODE01|v2ray|4x流量, server: jike-jxcn2.jiserver.xyz, port: 39563, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode07.jiserver.xyz}, udp: true}
+  - {name: 免费-日本6, server: jp06-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp06-vm0.entry.ikuuu.casa}, udp: true}
+  - {name: V5-香港6, server: hk06-vm5.entry.ikuuu.casa, port: 443, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-06.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC新新机房01|v2ray|4x流量, server: jike-jxcn2.jiserver.xyz, port: 39513, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg07.jiserver.xyz}, udp: true}
+  - {name: V5-京港2, server: hk02-vm5.entry.ikuuu.casa, port: 451, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-02.entry-0.chinasnow.net}, udp: true}
+  - {name: V5-京港3, server: hk03-vm5.entry.ikuuu.casa, port: 452, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-03.entry-0.chinasnow.net}, udp: true}
+  - {name: 香港Azure-新北Hinet, server: hkaz1.xmrth-node.xyz, port: 10062, type: vmess, uuid: 588a9e90-2989-31b5-b812-4536be0a8bae, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: teleg.run/vpnhat}, udp: true}
+  - {name: V5-日本7, server: jp07-vm5.entry.ikuuu.casa, port: 460, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-07.entry-0.chinasnow.net}, udp: true}
+  - {name: V5-香港7, server: hk07-vm5.entry.ikuuu.casa, port: 443, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-07.entry-0.chinasnow.net}, udp: true}
+  - {name: 免费-日本3, server: jp03-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp03-vm0.entry.ikuuu.casa}, udp: true}
+  - {name: JK1-V1-IPLC新LINODE02|v2ray|4x流量, server: jike1-quaniplc.jiserver.xyz, port: 39565, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode08.jiserver.xyz}, udp: true}
+  - {name: V5-京港1, server: hk01-vm5.entry.ikuuu.casa, port: 450, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-01.entry-0.chinasnow.net}, udp: true}
+  - {name: V5-香港8, server: hk08-vm5.entry.ikuuu.casa, port: 443, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-08.entry-0.chinasnow.net}, udp: true}
+  - {name: 免费-日本4, server: jp04-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp04-vm0.entry.ikuuu.casa}, udp: true}
+  - {name: V5-日本8, server: jp08-vm5.entry.ikuuu.casa, port: 461, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-08.entry-0.chinasnow.net}, udp: true}
+  - {name: V5-香港10, server: hk10-vm5.entry.ikuuu.casa, port: 458, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-01-10.entry-0.chinasnow.net}, udp: true}
+  - {name: AE_欢迎使用软件库APP, server: 74.72vpn.xyz, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 74.72vpn.xyz}, udp: true}
+  - {name: V5-日本11, server: jp11-vm5.entry.ikuuu.casa, port: 464, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-11.entry-0.chinasnow.net}, udp: true}
+  - {name: 免费-日本2, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp02-vm0.entry.ikuuu.casa}, udp: true}
+  - {name: V5-日本5-下载专用, server: jp05-vm5.entry.ikuuu.casa, port: 665, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-02-05.entry-0.chinasnow.net}, udp: true}
+  - {name: 欢迎使用软件库APP 2, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 2.72vpn.xyz}, udp: true}
+  - {name: JK1-V2-CN2俄02|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39391, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-ru06.jiserver.xyz}, udp: true}
+  - {name: 欢迎使用软件库APP 3, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 1.72vpn.xyz}, udp: true}
+  - {name: JK1-V3-广新新机房01|v2ray|1.5x流量, server: jike-gzyd.jiserver.xyz, port: 39507, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-azsg04.jiserver.xyz}, udp: true}
+  - {name: CN_欢迎使用软件库APP 5, server: 120.233.147.118, port: 53962, type: vmess, uuid: 3b149bd9-83a1-4779-9d2c-a6b72bfd5e75, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.233.147.118}, udp: true}
+  - {name: 欢迎使用软件库APP 4, server: 104.21.65.46, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: 6.72vpn.xyz}, udp: true}
+  - {name: V5-土耳其, server: tr01-vm5.entry.ikuuu.casa, port: 468, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: bgp-08-01.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V2-CN2美01|v2ray|4x流量, server: jike1-cccn2.jiserver.xyz, port: 32603, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-us05.jiserver.xyz}, udp: true}
+  - {name: US_欢迎使用软件库APP 4, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: 6c175d1a-a57f-4881-a471-173eb139694b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /xrenblog/, ws-headers: {Host: ipv6.xrenblog.com}, udp: true}
+  - {name: JK1-V2-CN2俄01|v2ray|2x流量, server: jike-cccn2.jiserver.xyz, port: 39399, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-ru05.jiserver.xyz}, udp: true}
+  - {name: 香港, server: jdhk1.cloudoo.xyz, port: 443, type: vmess, uuid: e17c63c9-d21d-4a84-a7a6-28f7c00eecec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: jdhk1.cloudoo.xyz}, udp: true}
+  - {name: 欢迎使用软件库APP 5, server: usa.oracleusa.ml, port: 2053, type: vmess, uuid: 3b149bd9-83a1-4779-9d2c-a6b72bfd5e75, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: US_欢迎使用软件库APP 5, server: 155.248.224.189, port: 443, type: vmess, uuid: 0797aba7-f60a-4bc3-acd9-946a85a1e864, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /google.com, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: JK1-V4-湖新LINODE01|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 38567, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode09.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-沪俄01|v2ray, server: shlt.jiserver.xyz, port: 39999, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-ru01.jiserver.xyz}, udp: true}
+  - {name: V5-京台2 动画疯, server: tw02-vm5.entry.ikuuu.casa, port: 453, type: vmess, uuid: 8b828cc1-9dea-382a-bdc7-e97bea278a8e, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tls/b60000_0001.ts, ws-headers: {Host: bgp-03-02.entry-0.chinasnow.net}, udp: true}
+  - {name: JK1-V1-IPLC俄01|v2ray|4x流量, server: iplc.jiserver.xyz, port: 39313, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-ru07.jiserver.xyz}, udp: true}
+  - {name: JK1-V4-广新LINODE01|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 38551, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode01.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-湖新LINODE01|v2ray|1.5x流量, server: jike1-gzyd.jiserver.xyz, port: 39571, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-linode11.jiserver.xyz}, udp: true}
+  - {name: JK1-V3-沪俄01|v2ray, server: shlt.jiserver.xyz, port: 39395, type: vmess, uuid: e2e02c2a-f9ef-3ddc-9430-c17de1b907af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jike1, ws-headers: {Host: jike1-ru03.jiserver.xyz}, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E08, server: tw28.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-法国+IPLC+E01, server: fr01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix, server: jp14.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-爱尔兰+IPLC+E01, server: ir01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E19+1000Mbps, server: hk19.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-法国+IPLC+E02, server: fr02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E13+1000Mbps, server: hk13.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-爱尔兰+IPLC+E03, server: ir03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E11+1000Mbps, server: hk11.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E20+1000Mbps, server: hk20.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E17+1000Mbps, server: hk17.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-法国+IPLC+E05, server: fr05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-爱尔兰+IPLC+E05, server: ir05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+03, server: kr13.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E10, server: hkt10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E09+1000Mbps, server: hk09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-法国+IPLC+E03, server: fr03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E05, server: hkt05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-爱尔兰+IPLC+E04, server: ir04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E04, server: hkbn04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E04+1000Mbps, server: hk04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E04, server: hkt04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E16+1000Mbps, server: hk16.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-爱尔兰+IPLC+E02, server: ir02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E01, server: hkt01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E15+1000Mbps, server: hk15.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E18+1000Mbps, server: hk18.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E08, server: hkt08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E05+1000Mbps, server: hk05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E06, server: hkbn06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E06+1000Mbps, server: hk06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E07+1000Mbps, server: hk07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-澳大利亚+IPLC+悉尼+E02, server: au02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E03, server: hkt03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E01, server: hkbn01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-澳大利亚+IPLC+悉尼+E03, server: au03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E05, server: hkbn05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E03+1000Mbps, server: hk03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E02, server: hkt02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E02+1000Mbps, server: hk02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E09, server: hkt09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-澳大利亚+IPLC+悉尼+E01, server: au01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-澳大利亚+IPLC+悉尼+E05, server: au05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-澳大利亚+IPLC+悉尼+E04, server: au04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E07, server: hkt07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E01+1000Mbps, server: hk01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E02, server: hkbn02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 俄罗斯+04, server: ru04.serenazuma.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+網上行寬頻+E06, server: hkt06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 香港+油尖旺御金·国峯+香港寬頻+E03, server: hkbn03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: SG_欢迎使用软件库APP, server: 54.151.244.16, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CA_加拿大, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 120.232.174.85, port: 47985, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
+  - {name: 日本+ソフトバンク+E04+500Mbps+1x+Netflix, server: jp34.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯, server: tw20.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国高级+IEPL+中继+E03, server: us03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国高级+IEPL+中继+E02, server: us02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国高级+IEPL+中继+E04, server: us04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国高级+IEPL+中继+E05, server: us05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国高级+IEPL+中继+E01, server: us01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国实验性+IEPL+中继+E02, server: us07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国实验性+IEPL+中继+E01, server: us06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国实验性+IEPL+中继+E05, server: us10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国实验性+IEPL+中继+E04, server: us09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 美国实验性+IEPL+中继+E03, server: us08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+05, server: kr15.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+10, server: kr20.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+01, server: kr01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+04, server: kr04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+08, server: kr18.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+05, server: kr05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+04, server: kr14.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯, server: tw01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix, server: jp01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix, server: jp02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix, server: jp03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix, server: jp04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix, server: jp06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix, server: jp11.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix, server: jp07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix, server: jp08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix, server: jp10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix, server: jp12.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix, server: jp15.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix, server: jp16.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix, server: jp17.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+01, server: kr11.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+02, server: kr12.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+06, server: kr16.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+07, server: kr17.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E08+1000Mbps, server: hk08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E12+1000Mbps, server: hk12.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E10+1000Mbps, server: hk10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中港专线+IPLC+E14+1000Mbps, server: hk14.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 韩国+전라북도+전주시+商宽+E+09, server: kr19.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E07+500Mbps+1x+Netflix, server: jp37.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+44, server: 44.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: 120.232.174.85, port: 24089, type: ss, cipher: aes-128-gcm, password: xoz6KQ, udp: true}
+  - {name: 精简+43, server: 43.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+42, server: 42.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+47, server: 47.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+49, server: 49.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+46, server: 46.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+48, server: 48.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+45, server: 45.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+50, server: 50.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 精简+41, server: 41.sapphirerapids.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E06, server: in06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E05, server: in05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E03, server: in03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E04, server: in04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E01, server: uk01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E02, server: uk02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E01, server: in01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E02, server: in02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E07, server: in07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E03, server: uk03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E05, server: tw25.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E04, server: uk04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E06, server: uk06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-英国伦敦电信+IEPL+E05, server: uk05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E06, server: tw26.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+08, server: kr08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix, server: jp18.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E10, server: tw30.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-印度+班加罗尔+एयरटेल+IPLC+E08, server: in08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯, server: tw17.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯, server: tw15.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+01, server: hk21.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本, server: zu.n.hxray.me, port: 43944, type: ss, cipher: aes-128-gcm, password: 47a56d84-3abb-48b0-b21b-1324b4ba04a0, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+02, server: hk22.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix, server: sgp01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+03, server: hk23.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+04, server: hk24.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+05, server: hk25.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix, server: sgp04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯, server: tw07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+07, server: hk27.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+16, server: hk36.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+18, server: hk38.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+13, server: hk33.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+19, server: hk39.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+15, server: hk35.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+10, server: hk30.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix, server: sgp02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix, server: sgp05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+20, server: hk40.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+11, server: hk31.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: _FR_法国, server: 51.255.66.185, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 新加坡+Magic+IEPL+中继+E02+Netflix, server: sgp07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Magic+IEPL+中继+E05+Netflix, server: sgp10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-加拿大+IPLC+E01, server: ca01.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-加拿大+IPLC+E02, server: ca02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-加拿大+IPLC+E03, server: ca03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-加拿大+IPLC+E04, server: ca04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-加拿大+IPLC+E05, server: ca05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Magic+IEPL+中继+E03+Netflix, server: sgp08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+08, server: hk28.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+17, server: hk37.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+09, server: hk29.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+12, server: hk32.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+14, server: hk34.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-香港+IEPL+Equinix+HK2+E+06, server: hk26.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Magic+IEPL+中继+E01+Netflix, server: sgp06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E12+500Mbps+1x+Netflix, server: jp42.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix, server: sgp03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E05+500Mbps+1x+Netflix, server: jp35.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E11+500Mbps+1x+Netflix, server: jp41.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E15+500Mbps+1x+Netflix, server: jp45.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+04, server: jp22.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+06, server: jp24.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 新加坡+Magic+IEPL+中继+E04+Netflix, server: sgp09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E02+500Mbps+1x+Netflix, server: jp32.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E09+500Mbps+1x+Netflix, server: jp39.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+08, server: jp26.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+03, server: kr03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+06, server: kr06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+09, server: jp27.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E10+500Mbps+1x+Netflix, server: jp40.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E14+500Mbps+1x+Netflix, server: jp44.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+11, server: jp29.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E01+500Mbps+1x+Netflix, server: jp31.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+01, server: jp19.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E18+500Mbps+1x+Netflix, server: jp48.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+05, server: jp23.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+07, server: jp25.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+02, server: jp20.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E03+500Mbps+1x+Netflix, server: jp33.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E06+500Mbps+1x+Netflix, server: jp36.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 日本+まつやまし+auひかり+ホーム1ギガ+E+10, server: jp28.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯, server: tw11.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯, server: tw19.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E04, server: tw24.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯, server: tw03.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 日本+ソフトバンク+E13+500Mbps+1x+Netflix, server: jp43.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E03, server: tw23.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E07, server: tw27.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-法国+IPLC+E04, server: fr04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯, server: tw02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯, server: tw04.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+02, server: kr02.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯, server: tw05.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯, server: tw06.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯, server: tw08.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯, server: tw10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯, server: tw12.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯, server: tw13.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯, server: tw14.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯, server: tw09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯, server: tw16.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E01, server: tw21.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E02, server: tw22.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯, server: tw18.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-台湾宜兰+IPLC+E09, server: tw29.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+09, server: kr09.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+10, server: kr10.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
+  - {name: 中国-韩国+IEPL+E+07, server: kr07.advancedvectorextensions.com, port: 14328, type: ss, cipher: rc4-md5, password: eHy72n, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -388,375 +1380,1483 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-台湾01|v2ray
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - 香港Azure-Mumbai-Linode 2
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - V5-香港11
+      - V5-香港6
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-香港7
+      - V5-京港1
+      - V5-香港8
+      - V5-香港10
+      - 香港
+      - V5-京台2 动画疯
+      - 中国-台湾宜兰+IPLC+E08
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - _CN_中国->🇭🇰_HK_香港
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -772,93 +2872,341 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 科技网络
-      - 科技网络 2
-      - 科技网络 3
-      - 科技网络 4
-      - 科技网络 5
-      - 科技网络 6
-      - 科技网络 7
-      - 科技网络 8
-      - 科技网络 9
-      - 科技网络 10
-      - 科技网络 11
-      - 科技网络 12
-      - 科技网络 13
-      - 科技网络 14
-      - 科技网络 15
-      - 科技网络 16
-      - 科技网络 17
-      - 科技网络 18
-      - 科技网络 19
-      - 科技网络 20
-      - 科技网络 21
-      - 科技网络 22
-      - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
-      - 科技网络 33
-      - 科技网络 34
-      - 科技网络 35
-      - 科技网络 36
-      - 科技网络 37
-      - 科技网络 38
-      - 科技网络 39
-      - 科技网络 40
-      - 科技网络 41
-      - 科技网络 42
-      - 科技网络 43
-      - 科技网络 44
-      - 科技网络 45
-      - 科技网络 46
-      - 科技网络 47
-      - 科技网络 48
-      - 科技网络 49
-      - 科技网络 50
-      - 科技网络 51
-      - 科技网络 52
-      - 科技网络 53
-      - 科技网络 54
-      - 科技网络 55
-      - 科技网络 56
-      - 科技网络 57
-      - 科技网络 58
-      - 科技网络 59
-      - 科技网络 60
-      - 科技网络 61
-      - 科技网络 62
-      - 科技网络 63
-      - 科技网络 64
-      - 科技网络 65
-      - 科技网络 66
-      - 科技网络 67
-      - 科技网络 68
-      - 科技网络 69
-      - 科技网络 70
-      - 科技网络 71
-      - 科技网络 72
-      - 科技网络 73
-      - 科技网络 74
-      - 科技网络 75
-      - 科技网络 76
-      - 科技网络 77
-      - 科技网络 78
-      - 科技网络 79
-      - 科技网络 80
-      - 科技网络 81
-      - 科技网络 82
-      - 科技网络 83
-      - 科技网络 84
-      - 科技网络 85
-      - 科技网络 86
-      - 科技网络 87
+      - JK1-V4-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V4-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪日02|v2ray
+      - JK1-V3-沪新新机房01v2ray
+      - JK1-V2-CN2新LINODE02|v2ray|2x流量
+      - JK1-V3-湖新LINODE02|v2ray|1.5x流量
+      - JK1-V3-广美01|v2ray|4x流量
+      - US_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP
+      - US_欢迎使用软件库APP 3
+      - JK1-V4-沪德GIA01|v2ray
+      - JK1-V4-台湾02|v2ray
+      - JK1-V2-CN2新新机房01|v2ray|2x流量
+      - JK1-V2-CN2德GIA01|v2ray|2x流量
+      - V5-英国
+      - JK1-V4-广日01|v2ray
+      - 免费-日本5
+      - JK1-V2-CN2日01|v2ray|2x流量
+      - JK1-V1-IPLC美01|v2ray|4x流量
+      - JK1-V1-IPLC德GIA01|v2ray|4x流量
+      - JK1-V3-广日01|v2ray
+      - JK1-V2-CN2台01|v2ray|2x流量
+      - JK1-V3-沪日02|v2ray
+      - Tokyo-Azure-Mumbai-Linode
+      - JK1-V2-CN2日02|v2ray|2x流量
+      - V5-美国
+      - Tokyo-Azure-Tokyo-AWS
+      - HK_欢迎使用软件库APP
+      - Tokyo-Azure-LAX-DediPath
+      - JK1-V4-广新新机房01|v2ray
+      - V5-新加坡
+      - 香港Azure-Mumbai-Linode
+      - JK1-V4-沪新新机房01|v2ray
+      - V5-日本10
+      - JK1-V4-沪新GIA01|v2ray
+      - JK1-V3-广新GIA01|v2ray|1.5x流量
+      - JK1-V4-台湾01|v2ray
+      - CN_欢迎使用软件库APP 2
+      - CN_欢迎使用软件库APP 3
+      - V5-京日3
+      - JK1-V3-广台02|v2ray|1.5x流量
+      - JK1-V2-CN2新LINODE01|v2ray|2x流量
+      - 日本-NF-Disney
+      - 香港Azure-Mumbai-Linode 2
+      - JK1-V3-广德GIA01|v2ray|1.5x流量
+      - 香港Azure-Seoul-AWS
+      - JK1-V2-CN2台02|v2ray|2x流量
+      - JK1-V3-广港BGP02|v2ray
+      - 香港Azure-Seoul-AWS 2
+      - JK1-V1-CN2台奈飞专用02
+      - V5-京台1 动画疯
+      - JK1-V3-广港BGP01|v2ray
+      - 新加坡
+      - JK1-V2-CN2新新机房02|v2ray|2x流量
+      - V5-俄罗斯
+      - JK1-V2-CN2新GIA01|v2ray|2x流量
+      - V5-京日1
+      - JK1-V1-IPLC台02|v2ray|4x流量
+      - V5-京日2
+      - CN_欢迎使用软件库APP 4
+      - JK1-V1-IPLC台奈飞专用03|4x流量
+      - JK1-V1-IPLC日02|v2ray|4x流量
+      - V5-日本9
+      - JK1-V1-IPLC台01|v2ray|4x流量
+      - V5-日本4
+      - JK1-V1-IPLC日01|v2ray|4x流量
+      - JK1-V3-广台01|v2ray|1.5x流量
+      - JK1-V1-IPLC新新机房02|v2ray|4x流量
+      - 欢迎使用软件库APP
+      - JK1-V1-IPLC新GIA01|v2ray|4x流量
+      - V5-香港11
+      - JK1-V1-IPLC新LINODE01|v2ray|4x流量
+      - 免费-日本6
+      - V5-香港6
+      - JK1-V1-IPLC新新机房01|v2ray|4x流量
+      - V5-京港2
+      - V5-京港3
+      - 香港Azure-新北Hinet
+      - V5-日本7
+      - V5-香港7
+      - 免费-日本3
+      - JK1-V1-IPLC新LINODE02|v2ray|4x流量
+      - V5-京港1
+      - V5-香港8
+      - 免费-日本4
+      - V5-日本8
+      - V5-香港10
+      - AE_欢迎使用软件库APP
+      - V5-日本11
+      - 免费-日本2
+      - V5-日本5-下载专用
+      - 欢迎使用软件库APP 2
+      - JK1-V2-CN2俄02|v2ray|2x流量
+      - 欢迎使用软件库APP 3
+      - JK1-V3-广新新机房01|v2ray|1.5x流量
+      - CN_欢迎使用软件库APP 5
+      - 欢迎使用软件库APP 4
+      - V5-土耳其
+      - JK1-V2-CN2美01|v2ray|4x流量
+      - US_欢迎使用软件库APP 4
+      - JK1-V2-CN2俄01|v2ray|2x流量
+      - 香港
+      - 欢迎使用软件库APP 5
+      - US_欢迎使用软件库APP 5
+      - JK1-V4-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V4-沪俄01|v2ray
+      - V5-京台2 动画疯
+      - JK1-V1-IPLC俄01|v2ray|4x流量
+      - JK1-V4-广新LINODE01|v2ray|1.5x流量
+      - JK1-V3-湖新LINODE01|v2ray|1.5x流量
+      - JK1-V3-沪俄01|v2ray
+      - 中国-台湾宜兰+IPLC+E08
+      - 中国-法国+IPLC+E01
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E02+Netflix
+      - 中国-爱尔兰+IPLC+E01
+      - 中港专线+IPLC+E19+1000Mbps
+      - 中国-法国+IPLC+E02
+      - 中港专线+IPLC+E13+1000Mbps
+      - 中国-爱尔兰+IPLC+E03
+      - 中港专线+IPLC+E11+1000Mbps
+      - 中港专线+IPLC+E20+1000Mbps
+      - 中港专线+IPLC+E17+1000Mbps
+      - 中国-法国+IPLC+E05
+      - 中国-爱尔兰+IPLC+E05
+      - 韩国+전라북도+전주시+商宽+E+03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E10
+      - 中港专线+IPLC+E09+1000Mbps
+      - 中国-法国+IPLC+E03
+      - 香港+油尖旺御金·国峯+網上行寬頻+E05
+      - 中国-爱尔兰+IPLC+E04
+      - 香港+油尖旺御金·国峯+香港寬頻+E04
+      - 中港专线+IPLC+E04+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E04
+      - 中港专线+IPLC+E16+1000Mbps
+      - 中国-爱尔兰+IPLC+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E01
+      - 中港专线+IPLC+E15+1000Mbps
+      - 中港专线+IPLC+E18+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E08
+      - 中港专线+IPLC+E05+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E06
+      - 中港专线+IPLC+E06+1000Mbps
+      - 中港专线+IPLC+E07+1000Mbps
+      - 中国-澳大利亚+IPLC+悉尼+E02
+      - 香港+油尖旺御金·国峯+網上行寬頻+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E01
+      - 中国-澳大利亚+IPLC+悉尼+E03
+      - 香港+油尖旺御金·国峯+香港寬頻+E05
+      - 中港专线+IPLC+E03+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E02
+      - 中港专线+IPLC+E02+1000Mbps
+      - 香港+油尖旺御金·国峯+網上行寬頻+E09
+      - 中国-澳大利亚+IPLC+悉尼+E01
+      - 中国-澳大利亚+IPLC+悉尼+E05
+      - 中国-澳大利亚+IPLC+悉尼+E04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E07
+      - 中港专线+IPLC+E01+1000Mbps
+      - 香港+油尖旺御金·国峯+香港寬頻+E02
+      - 俄罗斯+04
+      - 香港+油尖旺御金·国峯+網上行寬頻+E06
+      - 香港+油尖旺御金·国峯+香港寬頻+E03
+      - SG_欢迎使用软件库APP
+      - _CA_加拿大
+      - _US_美国
+      - _CN_中国->🇭🇰_HK_香港
+      - 日本+ソフトバンク+E04+500Mbps+1x+Netflix
+      - 中国-台湾+IPLC+HiNet固接+E10+Netflix+动画疯
+      - 美国高级+IEPL+中继+E03
+      - 美国高级+IEPL+中继+E02
+      - 美国高级+IEPL+中继+E04
+      - 美国高级+IEPL+中继+E05
+      - 美国高级+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E02
+      - 美国实验性+IEPL+中继+E01
+      - 美国实验性+IEPL+中继+E05
+      - 美国实验性+IEPL+中继+E04
+      - 美国实验性+IEPL+中继+E03
+      - 韩国+전라북도+전주시+商宽+E+05
+      - 韩国+전라북도+전주시+商宽+E+10
+      - 中国-韩国+IEPL+E+01
+      - 中国-韩国+IEPL+E+04
+      - 韩国+전라북도+전주시+商宽+E+08
+      - 中国-韩国+IEPL+E+05
+      - _CA_加拿大 2
+      - 韩国+전라북도+전주시+商宽+E+04
+      - 中国-台湾+IEPL+HiNet固接+E01+Netflix+动画疯
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E01+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E02+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E06+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E11+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E07+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E08+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E10+Netflix
+      - 中国-日本+沪日IEPL传输+Equinix-TY8+E12+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E03+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E04+Netflix
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E05+Netflix
+      - 韩国+전라북도+전주시+商宽+E+01
+      - 韩国+전라북도+전주시+商宽+E+02
+      - 韩国+전라북도+전주시+商宽+E+06
+      - 韩国+전라북도+전주시+商宽+E+07
+      - 中港专线+IPLC+E08+1000Mbps
+      - 中港专线+IPLC+E12+1000Mbps
+      - 中港专线+IPLC+E10+1000Mbps
+      - 中港专线+IPLC+E14+1000Mbps
+      - 韩国+전라북도+전주시+商宽+E+09
+      - 日本+ソフトバンク+E07+500Mbps+1x+Netflix
+      - 精简+44
+      - _CN_中国->🇭🇰_HK_香港 2
+      - 精简+43
+      - 精简+42
+      - 精简+47
+      - 精简+49
+      - 精简+46
+      - 精简+48
+      - 精简+45
+      - 精简+50
+      - 精简+41
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E06
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E05
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E03
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E04
+      - 中国-英国伦敦电信+IEPL+E01
+      - 中国-英国伦敦电信+IEPL+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E01
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E02
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E07
+      - 中国-英国伦敦电信+IEPL+E03
+      - 中国-台湾宜兰+IPLC+E05
+      - 中国-英国伦敦电信+IEPL+E04
+      - 中国-英国伦敦电信+IEPL+E06
+      - 中国-英国伦敦电信+IEPL+E05
+      - 中国-台湾宜兰+IPLC+E06
+      - 中国-韩国+IEPL+E+08
+      - 中国-日本+沪日IPLC传输+Equinix-TY8+E06+Netflix
+      - 中国-台湾宜兰+IPLC+E10
+      - 中国-印度+班加罗尔+एयरटेल+IPLC+E08
+      - 中国-台湾+IPLC+HiNet固接+E07+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E05+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+01
+      - _CN_中国->🇯🇵_JP_日本
+      - 中国-香港+IEPL+Equinix+HK2+E+02
+      - 新加坡+Legacy+Magic+IEPL+中继+E01+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+03
+      - 中国-香港+IEPL+Equinix+HK2+E+04
+      - 中国-香港+IEPL+Equinix+HK2+E+05
+      - 新加坡+Legacy+Magic+IEPL+中继+E04+Netflix
+      - 中国-台湾+IEPL+HiNet固接+E07+Netflix+动画疯
+      - 中国-香港+IEPL+Equinix+HK2+E+07
+      - 中国-香港+IEPL+Equinix+HK2+E+16
+      - 中国-香港+IEPL+Equinix+HK2+E+18
+      - 中国-香港+IEPL+Equinix+HK2+E+13
+      - 中国-香港+IEPL+Equinix+HK2+E+19
+      - 中国-香港+IEPL+Equinix+HK2+E+15
+      - 中国-香港+IEPL+Equinix+HK2+E+10
+      - 新加坡+Legacy+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E05+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+20
+      - 中国-香港+IEPL+Equinix+HK2+E+11
+      - _FR_法国
+      - 新加坡+Magic+IEPL+中继+E02+Netflix
+      - 新加坡+Magic+IEPL+中继+E05+Netflix
+      - 中国-加拿大+IPLC+E01
+      - 中国-加拿大+IPLC+E02
+      - 中国-加拿大+IPLC+E03
+      - 中国-加拿大+IPLC+E04
+      - 中国-加拿大+IPLC+E05
+      - 新加坡+Magic+IEPL+中继+E03+Netflix
+      - 中国-香港+IEPL+Equinix+HK2+E+08
+      - 中国-香港+IEPL+Equinix+HK2+E+17
+      - 中国-香港+IEPL+Equinix+HK2+E+09
+      - 中国-香港+IEPL+Equinix+HK2+E+12
+      - 中国-香港+IEPL+Equinix+HK2+E+14
+      - 中国-香港+IEPL+Equinix+HK2+E+06
+      - 新加坡+Magic+IEPL+中继+E01+Netflix
+      - 日本+ソフトバンク+E12+500Mbps+1x+Netflix
+      - 新加坡+Legacy+Magic+IEPL+中继+E03+Netflix
+      - 日本+ソフトバンク+E05+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E11+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E15+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+04
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+06
+      - 新加坡+Magic+IEPL+中继+E04+Netflix
+      - 日本+ソフトバンク+E02+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E09+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+08
+      - 中国-韩国+IEPL+E+03
+      - 中国-韩国+IEPL+E+06
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+09
+      - 日本+ソフトバンク+E10+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E14+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+11
+      - 日本+ソフトバンク+E01+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+01
+      - 日本+ソフトバンク+E18+500Mbps+1x+Netflix
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+05
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+07
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+02
+      - 日本+ソフトバンク+E03+500Mbps+1x+Netflix
+      - 日本+ソフトバンク+E06+500Mbps+1x+Netflix
+      - _CA_加拿大 3
+      - _CA_加拿大 4
+      - 日本+まつやまし+auひかり+ホーム1ギガ+E+10
+      - 中国-台湾+IPLC+HiNet固接+E01+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E03+Netflix+动画疯
+      - 日本+ソフトバンク+E13+500Mbps+1x+Netflix
+      - 中国-台湾宜兰+IPLC+E03
+      - 中国-台湾宜兰+IPLC+E07
+      - 中国-法国+IPLC+E04
+      - 中国-台湾+IEPL+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E04+Netflix+动画疯
+      - 中国-韩国+IEPL+E+02
+      - 中国-台湾+IEPL+HiNet固接+E05+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E10+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E02+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E03+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E04+Netflix+动画疯
+      - 中国-台湾+IEPL+HiNet固接+E09+Netflix+动画疯
+      - 中国-台湾+IPLC+HiNet固接+E06+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E01
+      - 中国-台湾宜兰+IPLC+E02
+      - 中国-台湾+IPLC+HiNet固接+E08+Netflix+动画疯
+      - 中国-台湾宜兰+IPLC+E09
+      - 中国-韩国+IEPL+E+09
+      - 中国-韩国+IEPL+E+10
+      - 中国-韩国+IEPL+E+07
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
