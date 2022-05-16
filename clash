@@ -5,515 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 8度商店：8du.shop, server: 20.205.11.55, port: 60045, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 2, server: juzi-iplc001.ddns-oink.xyz, port: 40175, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 3, server: juzi-iplc001.ddns-oink.xyz, port: 40121, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 4, server: jzdjd-01.ddns-oink.xyz, port: 40268, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 5, server: juzi-iplc001.ddns-oink.xyz, port: 40204, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 6, server: juzi-iplc001.ddns-oink.xyz, port: 40306, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 7, server: shanghai-cn2-01.ddns-oink.xyz, port: 40101, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-cn2-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 8, server: fliplc.getxlx.com, port: 59942, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 9, server: juzi-iplc001.ddns-oink.xyz, port: 40123, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 10, server: 116.129.254.33, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 11, server: 20.205.125.236, port: 20004, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 12, server: juzi-iplc001.ddns-oink.xyz, port: 40133, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 13, server: jzyjxcn2.ddns-oink.xyz, port: 40171, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzyjxcn2.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 14, server: shanghai-cn2-01.ddns-oink.xyz, port: 40103, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-cn2-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 15, server: juzi-iplc001.ddns-oink.xyz, port: 40173, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 16, server: fliplc.getxlx.com, port: 59944, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 17, server: 20.205.125.236, port: 60026, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 18, server: cdn-cn.nekocloud.cn, port: 19040, type: vmess, uuid: c1e94a4a-ba05-3ef9-ab0e-1148539af86b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dahjwuh, ws-headers: {Host: cdn-cn.nekocloud.cn}, udp: true}
-  - {name: 8度商店：8du.shop 19, server: fliplc.getxlx.com, port: 59943, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 20, server: yygd-rb-02.ddns-oink.xyz, port: 40107, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 21, server: fliplc.getxlx.com, port: 59952, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 22, server: 2.7.1.fuckppppp.today, port: 50002, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 23, server: yygd-rb-02.ddns-oink.xyz, port: 40041, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 24, server: 1.v2tk.tk, port: 443, type: vmess, uuid: f0e10fe1-b01d-4ecc-9fcc-550badc7d1f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: 1.v2tk.tk}, udp: true}
-  - {name: 8度商店：8du.shop 25, server: 20.205.11.55, port: 60042, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 26, server: 159.27.115.21, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
-  - {name: 8度商店：8du.shop 27, server: 20.205.125.236, port: 60012, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 28, server: fliplc.getxlx.com, port: 59931, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 29, server: fliplc.getxlx.com, port: 59950, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 30, server: 134.195.196.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 8度商店：8du.shop 31, server: 120.232.82.139, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.82.139}, udp: true}
-  - {name: 8度商店：8du.shop 32, server: juzi-iplc001.ddns-oink.xyz, port: 40218, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 33, server: 120.240.168.118, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 34, server: 3.v2tk.tk, port: 443, type: vmess, uuid: f0e10fe1-b01d-4ecc-9fcc-550badc7d1f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: 3.v2tk.tk}, udp: true}
-  - {name: 8度商店：8du.shop 35, server: juzi-iplc001.ddns-oink.xyz, port: 40217, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 36, server: word.14.1.fuckword.club, port: 48861, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 37, server: fliplc.getxlx.com, port: 59932, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 38, server: 120.240.168.118, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 39, server: 120.240.168.118, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 40, server: 134.195.196.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 8度商店：8du.shop 41, server: 116.129.254.65, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: 8度商店：8du.shop 42, server: 20.205.11.55, port: 60046, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 43, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 44, server: 20.205.125.236, port: 60018, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 45, server: 134.195.196.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 46, server: 116.129.254.33, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 47, server: 183.232.56.108, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 48, server: 159.27.115.21, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 49, server: 134.195.196.205, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 50, server: 120.240.168.118, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 51, server: 120.240.168.118, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 52, server: 134.195.196.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 8度商店：8du.shop 53, server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 54, server: 134.195.196.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 8度商店：8du.shop 55, server: 202.64.1.102, port: 553, type: vmess, uuid: 30ef0f29-da14-349d-9c49-728d5adc4ba8, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 56, server: 120.232.82.139, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.232.82.139}, udp: true}
-  - {name: 8度商店：8du.shop 57, server: 134.195.196.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 8度商店：8du.shop 58, server: fliplc.getxlx.com, port: 59941, type: vmess, uuid: 3a9e460c-2f70-3688-9602-ad67a1f5efbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 59, server: 20.205.125.236, port: 60041, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.125.236}, udp: true}
-  - {name: 8度商店：8du.shop 60, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 61, server: 134.195.196.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 8度商店：8du.shop 62, server: 134.195.196.205, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 8度商店：8du.shop 63, server: 172.99.190.35, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 64, server: 120.240.168.118, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 120.240.168.118}, udp: true}
-  - {name: 8度商店：8du.shop 65, server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ocikr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 66, server: 152.69.204.149, port: 50503, type: vmess, uuid: 11b8a8c2-3548-4424-88f8-26cde886230a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 67, server: 134.195.196.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 68, server: 183.232.56.108, port: 63041, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 69, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 70, server: 134.195.196.205, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 71, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 72, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 8度商店：8du.shop 73, server: jzdjd-01.ddns-oink.xyz, port: 40269, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzdjd-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 74, server: 116.129.254.65, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 75, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 76, server: 183.232.56.108, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 77, server: 116.129.254.33, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 78, server: 134.195.196.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 8度商店：8du.shop 79, server: 134.195.196.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 8度商店：8du.shop 80, server: yygd-rb-02.ddns-oink.xyz, port: 40109, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: yygd-rb-02.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 81, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 82, server: 120.240.168.118, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 83, server: 116.129.254.33, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.33}, udp: true}
-  - {name: 8度商店：8du.shop 84, server: 134.195.196.205, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 8度商店：8du.shop 85, server: 134.195.196.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 8度商店：8du.shop 86, server: 120.232.82.139, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 87, server: 120.232.82.139, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 88, server: 116.129.254.33, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 89, server: jzyjxcn2.ddns-oink.xyz, port: 40113, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: jzyjxcn2.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 90, server: 159.27.115.21, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
-  - {name: 8度商店：8du.shop 91, server: 112.64.53.217, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 112.64.53.217}, udp: true}
-  - {name: 8度商店：8du.shop 92, server: 2.sg.zz.xxxxx.x-t-fuckword.network, port: 60301, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 93, server: 159.27.115.21, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 94, server: 172.99.190.35, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 8度商店：8du.shop 95, server: word.2.fuckword.club, port: 36678, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 96, server: shanghai-01.ddns-oink.xyz, port: 40291, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: shanghai-01.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 97, server: 159.27.115.21, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 98, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 8度商店：8du.shop 99, server: 116.129.254.65, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 100, server: 120.232.82.139, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 101, server: 112.64.53.217, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 102, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 8度商店：8du.shop 103, server: xa.ex306.buzz, port: 443, type: vmess, uuid: E725D31D-BBBF-3330-7A40-C92DEEA3B1CF, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: xa.ex306.buzz}, udp: true}
-  - {name: 8度商店：8du.shop 104, server: 116.129.254.65, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 105, server: 172.99.190.35, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 106, server: 1.hk.zz.xxxxx.x-t-fuckword.network, port: 36672, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 107, server: 134.195.196.205, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 8度商店：8du.shop 108, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 8度商店：8du.shop 109, server: 183.232.56.108, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
-  - {name: 8度商店：8du.shop 110, server: 112.64.53.217, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 111, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 8度商店：8du.shop 112, server: juzi-iplc001.ddns-oink.xyz, port: 40202, type: vmess, uuid: 4a11fe77-f1a7-35b0-a535-4762d2f9ac2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jz666666, ws-headers: {Host: juzi-iplc001.ddns-oink.xyz}, udp: true}
-  - {name: 8度商店：8du.shop 113, server: 20.205.11.55, port: 60044, type: vmess, uuid: 9d7fb490-f159-3b56-8e8a-614c45c299d1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.11.55}, udp: true}
-  - {name: 8度商店：8du.shop 114, server: 116.129.254.65, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: 8度商店：8du.shop 115, server: 223.166.129.29, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 116, server: 112.64.53.217, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 117, server: 223.166.129.29, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 8度商店：8du.shop 118, server: 172.99.190.35, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 8度商店：8du.shop 119, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 8度商店：8du.shop 120, server: 112.64.53.217, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 112.64.53.217}, udp: true}
-  - {name: 8度商店：8du.shop 121, server: 183.232.56.108, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
-  - {name: 8度商店：8du.shop 122, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 8度商店：8du.shop 123, server: 183.232.56.108, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.108}, udp: true}
+  - {name: _油管频道：全网最强白嫖, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: _油管频道：全网最强白嫖 2, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: _油管频道：全网最强白嫖 3, server: x.mceee.xyz, port: 26021, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 4, server: z-cs.mceee.xyz, port: 21411, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 5, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: _油管频道：全网最强白嫖 6, server: z-fs.mceee.xyz, port: 22925, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 7, server: z-mm.mceee.xyz, port: 23422, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-mm.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 8, server: zzcm06.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: _油管频道：全网最强白嫖 9, server: x.mceee.xyz, port: 26041, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 10, server: z-fs.mceee.xyz, port: 22923, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 11, server: zzcm08.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: _油管频道：全网最强白嫖 12, server: zzcm07.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: _油管频道：全网最强白嫖 13, server: zzcm08.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm08.bdate.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 14, server: zzcm06.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 15, server: zzcm06.bdate.xyz, port: 1580, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: _油管频道：全网最强白嫖 16, server: zzcm01.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
+  - {name: _油管频道：全网最强白嫖 17, server: z-cs.mceee.xyz, port: 21913, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 18, server: zzcm07.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 19, server: z-cs.mceee.xyz, port: 21412, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 20, server: z-cs.mceee.xyz, port: 21911, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 21, server: zzcm06.bdate.xyz, port: 2000, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 22, server: 211.91.243.240, port: 31203, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 23, server: zzcm01.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 24, server: z-cs.mceee.xyz, port: 21311, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: _油管频道：全网最强白嫖 25, server: 167.88.63.119, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _油管频道：全网最强白嫖 26, server: 167.88.63.119, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _油管频道：全网最强白嫖 27, server: miner-two.pickaxe.sh, port: 443, type: trojan, password: YzJI2mQftXqA6ZH4, sni: miner-two.pickaxe.sh, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 28, server: us-01.pickaxe.sh, port: 443, type: trojan, password: VQcup0dd7ulkb1pV, sni: us-01.pickaxe.sh, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 29, server: shop-three.defun.us, port: 443, type: trojan, password: UvhTLyCf27fjxqPQ, sni: shop-three.defun.us, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 30, server: free.spcloud.us, port: 21010, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 31, server: meet-one.defun.us, port: 443, type: trojan, password: INvx7sPho8PyTLS6, sni: meet-one.defun.us, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 32, server: shop-one.defun.us, port: 443, type: trojan, password: OEfntmUGHmwQnNGr, sni: shop-one.defun.us, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 33, server: gz2.52168.xyz, port: 12106, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: MTQ5Omd0OWltZzBkMmpw, obfs-param: ZWU4MjExNDkuYmFpZHUuY29t, udp: true}
+  - {name: _油管频道：全网最强白嫖 34, server: iepl-gz.safetelescope.cc, port: 49853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: NjcwMTA6Y3VsR0o0ZFNrbg, obfs-param: YWpheC5taWNyb3NvZnQuY29t, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -532,129 +176,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -665,386 +220,119 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1060,129 +348,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 8度商店：8du.shop
-      - 8度商店：8du.shop 2
-      - 8度商店：8du.shop 3
-      - 8度商店：8du.shop 4
-      - 8度商店：8du.shop 5
-      - 8度商店：8du.shop 6
-      - 8度商店：8du.shop 7
-      - 8度商店：8du.shop 8
-      - 8度商店：8du.shop 9
-      - 8度商店：8du.shop 10
-      - 8度商店：8du.shop 11
-      - 8度商店：8du.shop 12
-      - 8度商店：8du.shop 13
-      - 8度商店：8du.shop 14
-      - 8度商店：8du.shop 15
-      - 8度商店：8du.shop 16
-      - 8度商店：8du.shop 17
-      - 8度商店：8du.shop 18
-      - 8度商店：8du.shop 19
-      - 8度商店：8du.shop 20
-      - 8度商店：8du.shop 21
-      - 8度商店：8du.shop 22
-      - 8度商店：8du.shop 23
-      - 8度商店：8du.shop 24
-      - 8度商店：8du.shop 25
-      - 8度商店：8du.shop 26
-      - 8度商店：8du.shop 27
-      - 8度商店：8du.shop 28
-      - 8度商店：8du.shop 29
-      - 8度商店：8du.shop 30
-      - 8度商店：8du.shop 31
-      - 8度商店：8du.shop 32
-      - 8度商店：8du.shop 33
-      - 8度商店：8du.shop 34
-      - 8度商店：8du.shop 35
-      - 8度商店：8du.shop 36
-      - 8度商店：8du.shop 37
-      - 8度商店：8du.shop 38
-      - 8度商店：8du.shop 39
-      - 8度商店：8du.shop 40
-      - 8度商店：8du.shop 41
-      - 8度商店：8du.shop 42
-      - 8度商店：8du.shop 43
-      - 8度商店：8du.shop 44
-      - 8度商店：8du.shop 45
-      - 8度商店：8du.shop 46
-      - 8度商店：8du.shop 47
-      - 8度商店：8du.shop 48
-      - 8度商店：8du.shop 49
-      - 8度商店：8du.shop 50
-      - 8度商店：8du.shop 51
-      - 8度商店：8du.shop 52
-      - 8度商店：8du.shop 53
-      - 8度商店：8du.shop 54
-      - 8度商店：8du.shop 55
-      - 8度商店：8du.shop 56
-      - 8度商店：8du.shop 57
-      - 8度商店：8du.shop 58
-      - 8度商店：8du.shop 59
-      - 8度商店：8du.shop 60
-      - 8度商店：8du.shop 61
-      - 8度商店：8du.shop 62
-      - 8度商店：8du.shop 63
-      - 8度商店：8du.shop 64
-      - 8度商店：8du.shop 65
-      - 8度商店：8du.shop 66
-      - 8度商店：8du.shop 67
-      - 8度商店：8du.shop 68
-      - 8度商店：8du.shop 69
-      - 8度商店：8du.shop 70
-      - 8度商店：8du.shop 71
-      - 8度商店：8du.shop 72
-      - 8度商店：8du.shop 73
-      - 8度商店：8du.shop 74
-      - 8度商店：8du.shop 75
-      - 8度商店：8du.shop 76
-      - 8度商店：8du.shop 77
-      - 8度商店：8du.shop 78
-      - 8度商店：8du.shop 79
-      - 8度商店：8du.shop 80
-      - 8度商店：8du.shop 81
-      - 8度商店：8du.shop 82
-      - 8度商店：8du.shop 83
-      - 8度商店：8du.shop 84
-      - 8度商店：8du.shop 85
-      - 8度商店：8du.shop 86
-      - 8度商店：8du.shop 87
-      - 8度商店：8du.shop 88
-      - 8度商店：8du.shop 89
-      - 8度商店：8du.shop 90
-      - 8度商店：8du.shop 91
-      - 8度商店：8du.shop 92
-      - 8度商店：8du.shop 93
-      - 8度商店：8du.shop 94
-      - 8度商店：8du.shop 95
-      - 8度商店：8du.shop 96
-      - 8度商店：8du.shop 97
-      - 8度商店：8du.shop 98
-      - 8度商店：8du.shop 99
-      - 8度商店：8du.shop 100
-      - 8度商店：8du.shop 101
-      - 8度商店：8du.shop 102
-      - 8度商店：8du.shop 103
-      - 8度商店：8du.shop 104
-      - 8度商店：8du.shop 105
-      - 8度商店：8du.shop 106
-      - 8度商店：8du.shop 107
-      - 8度商店：8du.shop 108
-      - 8度商店：8du.shop 109
-      - 8度商店：8du.shop 110
-      - 8度商店：8du.shop 111
-      - 8度商店：8du.shop 112
-      - 8度商店：8du.shop 113
-      - 8度商店：8du.shop 114
-      - 8度商店：8du.shop 115
-      - 8度商店：8du.shop 116
-      - 8度商店：8du.shop 117
-      - 8度商店：8du.shop 118
-      - 8度商店：8du.shop 119
-      - 8度商店：8du.shop 120
-      - 8度商店：8du.shop 121
-      - 8度商店：8du.shop 122
-      - 8度商店：8du.shop 123
+      - _油管频道：全网最强白嫖
+      - _油管频道：全网最强白嫖 2
+      - _油管频道：全网最强白嫖 3
+      - _油管频道：全网最强白嫖 4
+      - _油管频道：全网最强白嫖 5
+      - _油管频道：全网最强白嫖 6
+      - _油管频道：全网最强白嫖 7
+      - _油管频道：全网最强白嫖 8
+      - _油管频道：全网最强白嫖 9
+      - _油管频道：全网最强白嫖 10
+      - _油管频道：全网最强白嫖 11
+      - _油管频道：全网最强白嫖 12
+      - _油管频道：全网最强白嫖 13
+      - _油管频道：全网最强白嫖 14
+      - _油管频道：全网最强白嫖 15
+      - _油管频道：全网最强白嫖 16
+      - _油管频道：全网最强白嫖 17
+      - _油管频道：全网最强白嫖 18
+      - _油管频道：全网最强白嫖 19
+      - _油管频道：全网最强白嫖 20
+      - _油管频道：全网最强白嫖 21
+      - _油管频道：全网最强白嫖 22
+      - _油管频道：全网最强白嫖 23
+      - _油管频道：全网最强白嫖 24
+      - _油管频道：全网最强白嫖 25
+      - _油管频道：全网最强白嫖 26
+      - _油管频道：全网最强白嫖 27
+      - _油管频道：全网最强白嫖 28
+      - _油管频道：全网最强白嫖 29
+      - _油管频道：全网最强白嫖 30
+      - _油管频道：全网最强白嫖 31
+      - _油管频道：全网最强白嫖 32
+      - _油管频道：全网最强白嫖 33
+      - _油管频道：全网最强白嫖 34
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
